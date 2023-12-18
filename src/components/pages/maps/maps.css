@@ -1,6 +1,7 @@
 .dragFR {
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
 .dispatcherCard {
@@ -13,4 +14,10 @@
     flex-direction: column;
     justify-content: space-between;
     /* position: relative; */
+}
+
+.LF_card {
+    width: 24%;
+    height: 100%;
+    overflow: scroll;
 }

@@ -8,14 +8,20 @@ import './mapoverlay.css';
 
 const MapOverlay = () => {
 
+    const [showCard, setShowCard] = useState(true);
     const [showAssets, setShowAssets] = useState(false);
 
     const handleAssetsClick = () => {
         setShowAssets(!showAssets);
     };
 
+    const handleCrossClick = () => {
+        setShowCard(false);
+    };
+
 
     return (
+        showCard && (
            <div className="mapOverlayCard">
 
                 <div className="title">
@@ -24,7 +30,7 @@ const MapOverlay = () => {
                         <span className="overlay-txt">Map Overlays</span>
                         <span className="count">(7)</span>
                     </div>
-                    <div className="title-right">
+                    <div className="title-right" onClick={handleCrossClick}>
                         <img src={cross} alt="cross" />
                     </div>
                 </div>
@@ -182,6 +188,7 @@ const MapOverlay = () => {
                         </div>
                 </div>
            </div>
+        )
     )
 }
   

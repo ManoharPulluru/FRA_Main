@@ -3,7 +3,7 @@ import './selectdispatch.css';
 import filter from '../images/filter.svg'
 import vector from '../images/Vector.svg'
 
-const SelectDispatch = () => {
+const SelectDispatch = ({ onLawEnfClick }) => {
 
     return (
         <div className="SecondBlock">
@@ -39,7 +39,7 @@ const SelectDispatch = () => {
                 </div>
             </div>
 
-            <div className="selectBoxes">
+            <div className="selectBoxes" onClick={onLawEnfClick}>
                 <div className="checkbox-sec">
                     <input type="checkbox" />
                 </div>

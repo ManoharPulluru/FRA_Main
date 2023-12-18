@@ -14,7 +14,7 @@ const LawOfficer = () => {
         <div className="main-div">
             <div className="lawofficerCard">
 
-                <div className="R3">
+                <div className="Row-3">
                     <div className="officer-sec">
                     
                         <div className="box">

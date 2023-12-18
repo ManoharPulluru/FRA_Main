@@ -7,7 +7,7 @@ const InformTable = () => {
 
     return (
         <>
-        <div className="R1">
+        <div className="Row-1">
             <div className="R1-left">
                 <div className="img-block">
                     <img src={FireWarning} alt="Fire-Warning Logo" />
@@ -25,7 +25,7 @@ const InformTable = () => {
                 <img src={MapLogo} alt="Map-Logo" />
             </div>
         </div>
-        <div className="R2">
+        <div className="Row-2">
             <div className="first-block">
                 <div className="txt-block">
                     <div className="frst-col-txt">
