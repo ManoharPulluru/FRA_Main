@@ -8,7 +8,7 @@ import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import Incidents from '../pages/incidents/Incidents.jsx'
 import Cameras from '../pages/cameras/Cameras.jsx'
 import Communication from '../pages/communication/Communication.jsx'
-import Cms from '../pages/cms/Cms.jsx'
+import Realtimeinsights from '../pages/cms/Realtimeinsights.jsx'
 
 
 const Structure = () => {
@@ -35,7 +35,7 @@ const Structure = () => {
             <Route path='/incidents' element={<Incidents/>}/>
             <Route path='/cameras' element={<Cameras/>}/>
             <Route path='/communication' element={<Communication/>}/>
-            <Route path='/cms' element={<Cms/>}/>
+            <Route path='/cms' element={<Realtimeinsights/>}/>
           </Routes>
           </div>
           <div className='footer'>
