@@ -40,32 +40,29 @@
   height: 34.28%;
   display: flex;
   justify-content: space-between;
-  
 }
 .top-section .inside-container .bottom text {
   width: 49%;
   font-weight: 500;
   font-size: clamp(0.068125rem, -0.0002rem + 1.0937vw, 6.835625rem);
-  color: var(--Grey-600, #8B8989);
+  color: var(--Grey-600, #8b8989);
   text-align: center;
   padding-bottom: 10%;
   cursor: pointer;
 }
 
 #active {
-  /* border-bottom: 1px solid  #06f; */
-  /* border-width: 1%; */
   color: #383838;
   position: relative;
 }
 #active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 8%; /* Set your preferred border thickness in percentage */
-  background-color: #06f; /* Set your preferred border color */
+  height: 8%;
+  background-color: #06f;
   box-sizing: border-box;
 }
 
@@ -75,7 +72,6 @@
   margin: 6% 6% 0 6%;
   overflow-y: auto;
   scrollbar-width: none;
-  
 }
 .message-container::-webkit-scrollbar {
   display: none;
@@ -83,9 +79,6 @@
 .message_board .input-container {
   width: 100%;
   height: 18.33%;
-  /* display: flex;
-    flex-direction: column;
-    row-gap: 8%; */
   position: absolute;
   bottom: 0;
   padding: 5.2% 2.35%;
@@ -117,7 +110,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 2%;
-  /* border: 1px solid black; */
 }
 .message_board .input-container .top .left .to text {
   font-size: clamp(0.0625rem, -0.0059rem + 1.0939vw, 6.83125rem);
@@ -138,11 +130,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: clamp(0.0488125rem, 6.938893903907228e-18rem + 0.7809999999999999vw, 4.88125rem);
+  font-size: clamp(
+    0.0488125rem,
+    6.938893903907228e-18rem + 0.7809999999999999vw,
+    4.88125rem
+  );
   font-weight: 400;
   border-radius: 4px;
   color: #8b8989;
-  border: 1px solid #8B8989;
+  border: 1px solid #8b8989;
   background-color: transparent;
 }
 
@@ -160,11 +156,11 @@
   position: absolute;
   bottom: 0;
   left: 12%;
-  background-color: #EFF0F0;
+  background-color: #eff0f0;
 }
 .message_board .input-container .bottom .textarea textarea {
   width: 100%;
-  min-height:90%;
+  min-height: 90%;
   position: absolute;
   bottom: 0;
   font-size: clamp(0.0625rem, -0.0059rem + 1.0939vw, 6.83125rem);
@@ -180,11 +176,10 @@
   .bottom
   .textarea
   textarea::-webkit-input-placeholder {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-0%, -50%);
-    
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-0%, -50%);
 }
 
 .message_board .input-container .bottom .textarea textarea::placeholder {
@@ -201,9 +196,8 @@
   border-radius: 4px;
   background: #eff0f0;
   cursor: pointer;
-  
 }
-.message_board .input-container .bottom .media img{
+.message_board .input-container .bottom .media img {
   width: 50%;
 }
 .message_board .input-container .bottom .mice {
@@ -216,6 +210,6 @@
   background: #06f;
   cursor: pointer;
 }
-.message_board .input-container .bottom .mice img{
+.message_board .input-container .bottom .mice img {
   width: 50%;
 }

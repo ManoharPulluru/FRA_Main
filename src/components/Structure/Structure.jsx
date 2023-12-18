@@ -11,16 +11,21 @@ import Communication from '../pages/communication/Communication.jsx'
 import Realtimeinsights from '../pages/cms/Realtimeinsights.jsx'
 
 
+
+
+
 const Structure = () => {
   let [ShowMessageBoard,setShowMessageBoard]=useState(false)
   function showMessageBoard(){
     setShowMessageBoard(true)
+
   }
-  function hideMessageBoard(){
-    setShowMessageBoard(false)
+  function hideMessageBoard() {
+    setShowMessageBoard(false);
   }
   return (
     <BrowserRouter>
+
       <div className='mapsParent'>
         <div className='sidebar'>
         <SideBar showMessageBoard={showMessageBoard}/>
@@ -37,14 +42,15 @@ const Structure = () => {
             <Route path='/communication' element={<Communication/>}/>
             <Route path='/cms' element={<Realtimeinsights/>}/>
           </Routes>
+
           </div>
-          <div className='footer'>
-            <Footer ShowMessageBoard={ShowMessageBoard}/>
+          <div className="footer">
+            <Footer ShowMessageBoard={ShowMessageBoard} />
           </div>
         </div>
       </div>
-      </BrowserRouter>
-  )
-}
+    </BrowserRouter>
+  );
+};
 
-export default Structure
+export default Structure;
