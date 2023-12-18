@@ -7,11 +7,12 @@ const Mediauploadmodal = ({ hideFileUpload }) => {
     <div className="Mediauploadcontainer">
       <div className="modal">
         <div className="cloud-container">
+
           <div className="innercontainer">
             <img src={cloud} alt="upload_cloud" />
             <text>Uploaded!</text>
           </div>
-        </div>
+
         <div className="media-card">
           <Fileuploading />
         </div>
