@@ -6,7 +6,7 @@ import MessageBoard from '../pages/communication/MessageBoard/MessageBoard.jsx'
 import Maps from '../pages/maps/Maps.jsx'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import Incidents from '../pages/incidents/Incidents.jsx'
-import Cameras from '../pages/cameras/Cameras.jsx'
+import Cameras from '../pages/cameras/Camera/Cameras.jsx'
 import Communication from '../pages/communication/Communication.jsx'
 import Cms from '../pages/cms/Cms.jsx'
 
