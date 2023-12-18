@@ -16,13 +16,13 @@ const Mediauploadmodal = ({hideFileUpload}) => {
           <div className="media-card">
           <Fileuploading/>
           </div>
+          {/* <div className="media-card">
+          <Fileuploading/>
+          </div>
           <div className="media-card">
           <Fileuploading/>
           </div>
-          <div className="media-card last-card">
-          <Fileuploading/>
-          </div>
-          {/* <div className="media-card">
+          <div className="media-card">
           <Fileuploading/>
           </div> */}
       

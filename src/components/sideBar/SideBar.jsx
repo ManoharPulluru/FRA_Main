@@ -9,7 +9,7 @@ import Aigs from "./images/aigs.svg";
 import "./sideBar.css";
 import { Link } from "react-router-dom";
 
-const SideBar = ({showMessageBoard,hideMessageBoard}) => {
+const SideBar = ({showMessageBoard}) => {
   const [selectedLogo, setSelectedLogo] = useState(null);
 
   const handleLogoClick = (logo) => {
@@ -21,11 +21,10 @@ const SideBar = ({showMessageBoard,hideMessageBoard}) => {
       <img className="logoSideBar" alt="logoSide" src={Logo} />
       <Link to="/maps" style={{ textDecoration: 'none', display: 'contents' }}>
         <div
-        
           className={`overlaysForLogos ${
             selectedLogo === "overlays" ? "selected" : ""
           }`}
-          onClick={() =>{ handleLogoClick("overlays");hideMessageBoard()}}
+          onClick={() => handleLogoClick("overlays")}
         >
           <img className="sideLogos" alt="overlays" src={Overlays} />
         </div>
@@ -35,7 +34,7 @@ const SideBar = ({showMessageBoard,hideMessageBoard}) => {
         className={`incidentLogo ${
           selectedLogo === "incident" ? "selected" : ""
         }`}
-        onClick={() => {handleLogoClick("incident");hideMessageBoard()}}
+        onClick={() => handleLogoClick("incident")}
       >
           <img className="sideLogos" alt="incident" src={Light} />
       </div>
@@ -45,7 +44,7 @@ const SideBar = ({showMessageBoard,hideMessageBoard}) => {
         className={`camerasLogo ${
           selectedLogo === "cameras" ? "selected" : ""
         }`}
-        onClick={() =>{ handleLogoClick("cameras"); hideMessageBoard()}}
+        onClick={() => handleLogoClick("cameras")}
       >
         <img className="sideLogos" alt="cameras" src={Cctv} />
       </div>
@@ -63,7 +62,7 @@ const SideBar = ({showMessageBoard,hideMessageBoard}) => {
       <Link to="cms" style={{ textDecoration: 'none', display: 'contents' }}>
       <div
         className={`cmsLogo ${selectedLogo === "cms" ? "selected" : ""}`}
-        onClick={() => {handleLogoClick("cms");hideMessageBoard()}}
+        onClick={() => handleLogoClick("cms")}
       >
         <img className="sideLogos" alt="cms" src={Cms} />
       </div>
