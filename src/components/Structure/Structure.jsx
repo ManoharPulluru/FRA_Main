@@ -4,7 +4,7 @@ import SideBar from '../sideBar/SideBar.jsx'
 import Footer from '../footer/Footer.jsx'
 import MessageBoard from '../pages/communication/MessageBoard/MessageBoard.jsx'
 import Maps from '../pages/maps/Maps.jsx'
-import { BrowserRouter,Routes, Route } from 'react-router-dom'
+import { BrowserRouter,Routes, Route, useLocation } from 'react-router-dom'
 import Incidents from '../pages/incidents/Incidents.jsx'
 import Cameras from '../pages/cameras/Cameras.jsx'
 import Communication from '../pages/communication/Communication.jsx'
@@ -13,6 +13,8 @@ import Cms from '../pages/cms/Cms.jsx'
 
 const Structure = () => {
   let [ShowMessageBoard,setShowMessageBoard]=useState(false)
+  // let location=useLocation()
+  console.log()
   function showMessageBoard(){
     setShowMessageBoard(true)
   }
@@ -23,7 +25,7 @@ const Structure = () => {
     <BrowserRouter>
       <div className='mapsParent'>
         <div className='sidebar'>
-        <SideBar showMessageBoard={showMessageBoard}/>
+        <SideBar showMessageBoard={showMessageBoard} hideMessageBoard={hideMessageBoard}/>
         </div>
        {ShowMessageBoard && <div className="messageBoard">
           <MessageBoard hideMessageBoard={hideMessageBoard}/>
