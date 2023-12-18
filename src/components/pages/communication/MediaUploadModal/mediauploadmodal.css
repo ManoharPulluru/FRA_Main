@@ -14,7 +14,6 @@
   height: 81.71%;
   display: flex;
   flex-direction: column;
-  position: relative;
   padding: 2%;
   border-radius: 1.8%;
   background: var(--White, #fff);
@@ -24,16 +23,13 @@
 }
 .Mediauploadcontainer .modal .cloud-container {
   width: 100%;
-  height:44.04%;
-  /* flex-shrink: ; */
-  /* height: max-content; */
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
   margin-bottom: 4%;
   border-radius: 1.8%;
   border: 2.517px dashed #dadce0;
-  /* border: 2.517% dashed #dadce0; */
 }
 .Mediauploadcontainer .modal .cloud-container .innercontainer {
   display: flex;
@@ -43,34 +39,22 @@
   font-size: clamp(0.1175rem, -0.0005rem + 1.8876vw, 11.796875rem);
   color: #4f4f4f;
 }
-.Mediauploadcontainer .modal .cloud-container .innercontainer img{
-    width: 100%;
-}
-.Mediauploadcontainer .modal .medias {
+.Mediauploadcontainer .modal .cloud-container .innercontainer img {
   width: 100%;
-  /* height:32.07%; */
-  height: fit-content;
-  /* margin-bottom: 4%; */
-  position: absolute;
-  bottom: 17.7%;
-  left: 0;
 }
-.Mediauploadcontainer .modal .medias .media-card {
-  /* width: 100%; */
-  min-height: 27.8%;
-  padding: 0 4%;
+
+.Mediauploadcontainer .modal .media-card {
+  min-height: 7.8%;
   margin-bottom: 2%;
-  
 }
+
 .Mediauploadcontainer .modal .actions {
   width: 96.5%;
   height: 6.6%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 5%;
-  left: 0;
+  margin-top: 2%;
 }
 .Mediauploadcontainer .modal .actions button {
   width: 11.02%;
@@ -82,7 +66,7 @@
   font-weight: 400;
   outline: none;
 }
-.Mediauploadcontainer .modal .actions .cancel{
+.Mediauploadcontainer .modal .actions .cancel {
   border-radius: 4px;
-  border: 2px solid var(--Grey-700, #4F4F4F);
+  border: 2px solid var(--Grey-700, #4f4f4f);
 }

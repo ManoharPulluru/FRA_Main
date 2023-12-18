@@ -9,7 +9,7 @@ import Aigs from "./images/aigs.svg";
 import "./sideBar.css";
 import { Link } from "react-router-dom";
 
-const SideBar = ({showMessageBoard}) => {
+const SideBar = ({showMessageBoard, hideMessageBoard}) => {
   const [selectedLogo, setSelectedLogo] = useState(null);
 
   const handleLogoClick = (logo) => {
@@ -24,7 +24,7 @@ const SideBar = ({showMessageBoard}) => {
           className={`overlaysForLogos ${
             selectedLogo === "overlays" ? "selected" : ""
           }`}
-          onClick={() => handleLogoClick("overlays")}
+          onClick={() => {handleLogoClick("overlays");hideMessageBoard()}}
         >
           <img className="sideLogos" alt="overlays" src={Overlays} />
         </div>
@@ -34,7 +34,7 @@ const SideBar = ({showMessageBoard}) => {
         className={`incidentLogo ${
           selectedLogo === "incident" ? "selected" : ""
         }`}
-        onClick={() => handleLogoClick("incident")}
+        onClick={() => {handleLogoClick("incident");hideMessageBoard()}}
       >
           <img className="sideLogos" alt="incident" src={Light} />
       </div>
@@ -44,7 +44,7 @@ const SideBar = ({showMessageBoard}) => {
         className={`camerasLogo ${
           selectedLogo === "cameras" ? "selected" : ""
         }`}
-        onClick={() => handleLogoClick("cameras")}
+        onClick={() =>{ handleLogoClick("cameras");hideMessageBoard()}}
       >
         <img className="sideLogos" alt="cameras" src={Cctv} />
       </div>
@@ -62,7 +62,7 @@ const SideBar = ({showMessageBoard}) => {
       <Link to="cms" style={{ textDecoration: 'none', display: 'contents' }}>
       <div
         className={`cmsLogo ${selectedLogo === "cms" ? "selected" : ""}`}
-        onClick={() => handleLogoClick("cms")}
+        onClick={() => {handleLogoClick("cms");hideMessageBoard()}}
       >
         <img className="sideLogos" alt="cms" src={Cms} />
       </div>

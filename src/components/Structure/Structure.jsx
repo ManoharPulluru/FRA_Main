@@ -23,7 +23,7 @@ const Structure = () => {
     <BrowserRouter>
       <div className='mapsParent'>
         <div className='sidebar'>
-        <SideBar showMessageBoard={showMessageBoard}/>
+        <SideBar showMessageBoard={showMessageBoard} hideMessageBoard={hideMessageBoard}/>
         </div>
        {ShowMessageBoard && <div className="messageBoard">
           <MessageBoard hideMessageBoard={hideMessageBoard}/>
